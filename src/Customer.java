@@ -38,7 +38,7 @@ public class Customer extends ServicePrice implements CustomerInvoice {
         localDateTime = LocalDateTime.now();
         dateTimeFormatter = DateTimeFormatter.ofPattern("EEEE, dd MMM yyyy HH:mm:ss");
         dateFormated = localDateTime.format(dateTimeFormatter);
-        System.out.println("Hari ini adalah hari : " + dateFormated);
+        System.out.println("Date Transaction : " + dateFormated);
         return null;
     }
 }

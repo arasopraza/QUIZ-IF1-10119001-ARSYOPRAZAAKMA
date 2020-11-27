@@ -24,7 +24,10 @@ public class Main {
         System.out.print("Choose (1/2/3) : ");
         customer.setPriceService(scanner.nextInt());
         System.out.print("Are you Member (yes/no) : ");
+        customer.setMember(scanner.hasNextBoolean());
         customer.checkMemberStatus(scanner.nextLine());
         customer.currentTime();
+        System.out.println("Discount :" +  customer.getSale(customer.isMember(), customer.getPriceService()));
+        System.out.println("Total pay :" + customer.getTotalPay(customer.getPriceService(), customer.getDiscount()));
     }
 }

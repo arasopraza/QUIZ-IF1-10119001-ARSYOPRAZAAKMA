@@ -9,6 +9,14 @@ public class ServicePrice implements ServiceItem {
         this.priceService = priceService;
     }
 
+    public float getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(float discount) {
+        this.discount = discount;
+    }
+
     @Override
     public void displayService() {
         System.out.println("#***************************#");
