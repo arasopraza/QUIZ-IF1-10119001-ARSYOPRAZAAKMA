@@ -26,6 +26,7 @@ public class Main {
         System.out.print("Are you Member (yes/no) : ");
         customer.setMember(scanner.hasNextBoolean());
         customer.checkMemberStatus(scanner.nextLine());
+        System.out.println("#****Customer Invoice***#");
         customer.currentTime();
         System.out.println("Discount :" +  customer.getSale(customer.isMember(), customer.getPriceService()));
         System.out.println("Total pay :" + customer.getTotalPay(customer.getPriceService(), customer.getDiscount()));
